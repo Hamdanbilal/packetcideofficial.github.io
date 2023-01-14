@@ -1,0 +1,229 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 12px;
+  }
+  
+  body{
+    width: 99%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,251,251, 0.75),rgba(0,0,0,0.75));
+  }
+  h1 {
+    font-size: 2em;
+    color: #00b8d4;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    position: absolute;
+    width: 65%;
+    top: 20px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    position: relative;
+  }
+  
+  nav a {
+    display: block;
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #00b8d4;
+    color: #fff;
+  }
+  
+  nav .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  
+  nav li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  nav .submenu a {
+    display: block;
+    padding: 10px;
+  }
+  
+  nav .submenu a:hover {
+    background-color: #00b8d4;
+    color: #fff;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+
+  .form-wrap {
+    width: 320px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .form-wrap h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+  }
+
+  .form-wrap form {
+    padding: 20px;
+  }
+
+  .form-wrap form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777777;
+  }
+
+  .form-wrap form input[type="text"],
+  .form-wrap form input[type="password"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555555;
+  }
+
+  .form-wrap form input[type="text"]:focus,
+  .form-wrap form input[type="password"]:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: 0 0 2px #4d90fe;
+  }
+
+  .form-wrap form button[type="submit"]{
+    margin-top: 20px;
+    width: 100%;
+    height: 44px;
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-wrap form button[type="submit "]:hover {
+    background-color: #357ae8;
+  }
+
+  .form-wrap form button[type="submit "]:active {
+    background-color: #357ae8;
+    transform: translateY(2px);
+  }
+  .form-wrap form button[type="button"]{
+    margin-top: 20px;
+    width: 100%;
+    height: 44px;
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-wrap form button[type="button "]:hover {
+    background-color: #357ae8;
+  }
+
+  .form-wrap form button[type="button "]:active {
+    background-color: #357ae8;
+    transform: translateY(2px);
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    font-size: 1.2em;
+    padding: 32px;
+    animation: fadeIn 0  .5s;
+  }
+  
+  .footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s;
+  }
+  
+  .footer .footer-section h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  }
+  
+  .footer .footer-section p {
+  margin: 0;
+  margin-bottom: 8px;
+  }
+  
+  .footer .footer-section .social-icon img {
+    width: 31px;
+    height: 31px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  }
+  
+  .footer .footer-section .social-icon img:hover {
+  transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  }
+  
